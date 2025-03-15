@@ -1,0 +1,84 @@
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f0f4f9;
+    padding: 25px 50px 25px 25px;
+    box-sizing: border-box;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #e6eaf1;
+    padding: 10px 15px;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: gray;
+}
+
+.sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    animation: fadein 1.5s linear;
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #282828;
+}
+
+.recent-entry:hover {
+    background-color: #e2e6eb;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:600px) {
+    .sidebar {
+        display: none;
+    }
+}
